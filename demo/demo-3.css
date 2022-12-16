@@ -5,12 +5,16 @@ button {
 .content {
   display: flex;
   justify-content: center;
+  display: table-cell;
 }
 
 .user {
   padding: 20px;
+  background-color: aquamarine;
 }
-
+#bob{
+  background-color: aquamarine;
+}
 .message {
   padding: 2px 4px;
   margin: 0px;

@@ -29,9 +29,9 @@
     <div id="alice" class="user">
       <h4>Alice</h4>
       <div class="message-box">
+        <div class="message-box-received disabled" id="receiveAlice" disabled></div>
         <input class="message-box-message" type="text" id="messageAlice" placeholder="Message Bob" disabled>
         <button id="sendAlice" disabled>Send</button>
-        <div class="message-box-received disabled" id="receiveAlice" disabled></div>
       </div>
       <ol>
         <li><button id="connectAlice" disabled>Connect</button></li>
@@ -46,9 +46,9 @@
     <div id="bob" class="user">
       <h4>Bob</h4>
       <div class="message-box">
+        <div class="message-box-received disabled" id="receiveBob"></div>
         <input class="message-box-message" type="text" id="messageBob" placeholder="Message Alice" disabled>
         <button id="sendBob" disabled>Send</button>
-        <div class="message-box-received disabled" id="receiveBob"></div>
       </div>
       <ol>
         <li><button id="connectBob" disabled>Connect</button></li>
