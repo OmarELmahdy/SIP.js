@@ -69,7 +69,22 @@ button {
 
 }
 
+.out1 {
+  border: 3px solid;
+  background: red;
+  width: auto;
+  height: auto;
+  border-radius: 2px;
 
+}
+.out2 {
+  border: 3px solid;
+  background: rgb(173, 5, 5);
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+
+}
 
 .ghost {
   visibility: hidden;

@@ -18,6 +18,13 @@
           <div class="sidebar-header">
             <img src="images/me.jpg" />
             <div class="sidebar-header-icons">
+              <a href="./register.html"> 
+                <button class = "out1" id="unregisterAlice" disabled>Unregister</button>
+              </a>
+
+              <a href="./connect.html"> 
+                <button class = "out2" id="disconnectAlice" disabled>Disconnect</button>
+              </a>
               <img src="images/status.svg" />
               <img src="images/message-icon.svg" />
               <img src="images/menu-icon.svg" />
@@ -294,9 +301,10 @@
                   </a>
                 </div>
                 <ul>
-                  <li><button id="beginAlice" disabled>Initiate Video Session</button></li>
-                  <li><button id="unregisterAlice" disabled>Unregister</button></li>
-                  <li><button id="disconnectAlice" disabled>Disconnect</button></li>
+                  <li  class = "ghost"><button id="beginAlice" disabled>Initiate Video Session</button></li>
+
+                
+  
                   <li class = "ghost"><button id="connectAlice" disabled>Connect</button></li>
                   <li class = "ghost"><button id="registerAlice" disabled>Register User</button></li>
                 </ul>
@@ -311,7 +319,7 @@
               </div>
         
               <div id="bob" class="user"style="display: table-cell">
-                <h4>Ahmed</h4>
+                <h4>Tamer</h4>
                 
                 <div class="video">
                   <video id="videoRemoteBob" width="100%" muted="muted"  poster="images/manForest.jpeg">
@@ -340,11 +348,16 @@
                  
                 </div>
                 <ul>
-                  <li><button id="beginBob" disabled>Initiate Video Session</button></li>
-                  <li><button id="unregisterBob" disabled>Unregister</button></li>
-                  <li><button id="disconnectBob" disabled>Disconnect</button></li>
+                  
+                  <a href="./texting.html"> 
+                    <button  class = "out1" id="unregisterBob" disabled>Unregister</button>
+                  </a>
+                  <a href="./texting.html"> 
+                    <button  class = "out2" id="disconnectBob" disabled>Disconnect</button>
+                  </a>
                   <li class = "ghost"><button id="connectBob" disabled>Connect</button></li>
                   <li class = "ghost"><button id="registerBob" disabled>Register User</button></li>
+                  <li class = "ghost"><button id="beginBob" disabled>Initiate Video Session</button></li>
                 </ul>
              
               
