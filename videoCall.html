@@ -271,63 +271,83 @@
           <div class="chat-window">
             <div class="content"style="display: table-cell">
               <div id="alice" class="user"style="display: table-cell">
-                <h4>Alice</h4>
+                <h4>Anas</h4>
                 <div class="video">
-                  <video id="videoRemoteAlice" width="100%" muted="muted">
+                  <video id="videoRemoteAlice" width="100%" muted="muted" poster="images/muslim.jpeg">
                     <p>Your browser doesn't support HTML5 video.</p>
                   </video>
                   <div class="video-local">
-                    <video id="videoLocalAlice" width="100%" muted="muted">
+                    <video id="videoLocalAlice" width="100%" muted="muted" poster="images/manForest.jpeg">
                       <p>Your browser doesn't support HTML5 video.</p>
                     </video>
                   </div>
+                 
+                </div>
+               
+                <div class = "connect">
+                  <input type="checkbox" id="holdAlice" name="holdAlice" disabled />
+                  <label  for="holdAlice"><img id="changeHoldAlice"  src="images/cameraOff.png" alt="" width="15%" height="15%"/></label>
+                  <input type="checkbox" id="muteAlice" name="muteAlice" disabled />
+                  <label for="muteAlice"><img  id = "changeMuteAlice" src="images/mute.png" alt="" width="15%" height="15%"/></label>
+                  <a href="./texting.html"> 
+                    <button id="endAlice"  disabled> <img  src="images/end-call.webp" alt="buttonpng" width="30%" height="30%" /> </button>
+                  </a>
                 </div>
                 <ol>
                   <li><button id="connectAlice" disabled>Connect</button></li>
                   <li><button id="registerAlice" disabled>Register User</button></li>
                   <li><button id="beginAlice" disabled>Initiate Video Session</button></li>
-                  <li><button id="endAlice" disabled>End Video Session</button></li>
                   <li><button id="unregisterAlice" disabled>Unregister</button></li>
                   <li><button id="disconnectAlice" disabled>Disconnect</button></li>
                 </ol>
-                <div>
+                <!-- <div>
                   <input type="checkbox" id="holdAlice" name="holdAlice" disabled />
                   <label for="holdAlice">Hold</label>
                 </div>
                 <div>
                   <input type="checkbox" id="muteAlice" name="muteAlice" disabled />
                   <label for="muteAlice">Mute</label>
-                </div>
+                </div> -->
               </div>
         
               <div id="bob" class="user"style="display: table-cell">
-                <h4>Bob</h4>
+                <h4>Ahmed</h4>
+                
                 <div class="video">
-                  <video id="videoRemoteBob" width="100%" muted="muted">
+                  <video id="videoRemoteBob" width="100%" muted="muted"  poster="images/manForest.jpeg">
                     <p>Your browser doesn't support HTML5 video.</p>
                   </video>
+
                   <div class="video-local">
-                    <video id="videoLocalBob" width="100%" muted="muted">
+                    <video id="videoLocalBob" width="100%" muted="muted"  poster="images/muslim.jpeg">
                       <p>Your browser doesn't support HTML5 video.</p>
                     </video>
                   </div>
+               
+            
+                </div>
+
+                <div class = "connect">
+                  <input type="checkbox" id="holdBob" name="holdBob" disabled />
+                  <label  for="holdBob"><img id="changeHoldBob"  src="images/cameraOff.png" alt="" width="15%" height="15%"/></label>
+                  <input type="checkbox" id="muteBob" name="muteBob" disabled />
+                  <label for="muteBob"><img  id = "changeMuteBob" src="images/mute.png" alt="" width="15%" height="15%"/></label>
+                  <button id="endBob" disabled><img  src="images/end-call.webp" alt="buttonpng" width="30%" height="30%" /></button>
+
+                </div>
+               
+                <div>
+                 
                 </div>
                 <ol>
                   <li><button id="connectBob" disabled>Connect</button></li>
                   <li><button id="registerBob" disabled>Register User</button></li>
                   <li><button id="beginBob" disabled>Initiate Video Session</button></li>
-                  <li><button id="endBob" disabled>End Video Session</button></li>
                   <li><button id="unregisterBob" disabled>Unregister</button></li>
                   <li><button id="disconnectBob" disabled>Disconnect</button></li>
                 </ol>
-                <div>
-                  <input type="checkbox" id="holdBob" name="holdBob" disabled />
-                  <label for="holdBob">Hold</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="muteBob" name="muteBob" disabled />
-                  <label for="muteBob">Mute</label>
-                </div>
+             
+              
               </div>
             </div>
         
