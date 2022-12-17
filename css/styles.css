@@ -1,9 +1,9 @@
 /*
 *Importing Demos CSS
 */
-@import "demo/demo-1.css";
-@import "demo/demo-2.css";
-@import "demo/demo-3.css";
+@import "../demo/demo-1.css";
+@import "../demo/demo-2.css";
+@import "../demo/demo-3.css";
 /*************** 
  * BASE STYLES *
  ***************/
@@ -657,3 +657,5 @@ input[type="range"] {
 .type-message-bar-right {
   margin-left: 2rem;
 }
+
+

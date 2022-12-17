@@ -10,10 +10,10 @@ button {
 
 .user {
   padding: 20px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 #bob{
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 .message {
   padding: 2px 4px;
