@@ -261,7 +261,7 @@
             </div>
             <div class="chat-window-header-right">
               <a href="./texting.html">
-              <img class="chat-window-menu-icon" src="images/messages.svg"  alt="Start texting."/>
+              <img class="chat-window-menu-icon" src="images/messages.svg"  alt="Start texting"/>
               </a>
               <a href="./videoCall.html">
                 <img class="chat-window-search-icon" src="images/video-camera.svg"  alt="Make a video call." />
@@ -271,36 +271,36 @@
           <div class="chat-window">
 
             <!-- SIP CONTENT -->
-            <h2>Demo: Audio Call - Outbound</h2>
-
-            <div>
-              When this page was loaded, a <code>SimpleUser</code> was created.
+            <div id="audio-call-content">
+              
+              <h1>Audio Call</h1>
+              <!-- <div>
+                When this page was loaded, a <code>SimpleUser</code> was created.
+                <ol>
+                  <li>Connect <code>SimpleUser</code> to server</li>
+                  <li>Place call to destination</li>
+                  <li>Hangup call</li>
+                  <li>Disconnect</li>
+                </ol>
+              </div> -->
+              
               <ol>
-                <li>Connect <code>SimpleUser</code> to server</li>
-                <li>Place call to destination</li>
-                <li>Hangup call</li>
-                <li>Disconnect</li>
+                <li><button id="connect" disabled>Connect</button> with <code><span id="server"></span></code></li>
+                <li><button id="call" disabled>Place Call</button> with <code><span id="target"></span></code></li>
+                <li><button id="hangup" disabled>Hangup Call</button></li>
+                <li><button id="disconnect" disabled>Disconnect</button></li>
               </ol>
-            </div>
-          
-            <ol>
-              <li><button id="connect" disabled>Connect</button> with <code><span id="server"></span></code></li>
-              <li><button id="call" disabled>Place Call</button> with <code><span id="target"></span></code></li>
-              <li><button id="hangup" disabled>Hangup Call</button></li>
-              <li><button id="disconnect" disabled>Disconnect</button></li>
-            </ol>
-          
-            <p>
-              When the call is established, the remote audio is added to the following HTML5 audio element...
+              
+              <p>
+                When the call is established, the remote audio is added to the following HTML5 audio element...
             </p>
-            <audio id="remoteAudio" controls>
+            <audio id="remoteAudio" style="width: min-content;"controls>
               <p>Your browser doesn't support HTML5 audio.</p>
-            </audio>
-          
-            <p>
-              While the call is established, DTMF may be sent using the following "keypad"...
-            </p>
-            <div class="dtmf">DTMF sent: <span id="dtmf"></span></div>
+            </audio> 
+            
+            
+            
+            <div class="dtmf"><span id="dtmf"></span></div>
             <div>
               <div>
                 <button class="keypad" disabled>1</button>
@@ -323,22 +323,26 @@
                 <button class="keypad" disabled>#</button>
               </div>
             </div>
-          
-            <p>
-              While the call is established, the session may placed on hold or muted...
-            </p>
-            <div>
-              <input type="checkbox" id="hold" name="hold" disabled>
-              <label for="hold">Hold</label>
+            
+           
+            <div class="grid-container">
+              <div class="toggle-pill-color" style="display: table-cell">
+                  <div>
+                    <input type="checkbox" id="hold" name="hold" disabled>
+                    <label for="hold">Hold</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="mute" name="mute" disabled>
+                    <label for="mute">Mute</label>
+                  </div>
+              </div>
             </div>
-            <div>
-              <input type="checkbox" id="mute" name="mute" disabled>
-              <label for="mute">Mute</label>
-            </div>
-          
+
+          </div>
+            
             <script src="./demo/dist/demo-1.js"
-              onerror="alert('To run this demo you must first build the library and demo source! See the README.')">
+            onerror="alert('To run this demo you must first build the library and demo source! See the README.')">
               </script>
   
-  </body>
+</body>
 </html>

@@ -20,3 +20,6 @@ input {
 .dtmf {
   margin: 8px;
 }
+.keypad{
+  display: none;
+}

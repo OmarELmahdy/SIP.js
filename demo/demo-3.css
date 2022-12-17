@@ -10,11 +10,8 @@ button {
 
 .user {
   padding: 20px;
-  background-color: aquamarine;
 }
-#bob{
-  background-color: aquamarine;
-}
+
 .message {
   padding: 2px 4px;
   margin: 0px;
@@ -25,11 +22,29 @@ button {
 }
 
 .message-box-received {
-  height: 200px;
-  width: 200px;
-  overflow-y: auto;
-  border: solid 1px;
-  margin-top: 10px;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.3rem;
+  position: relative;
+  background: var(--white);
+  align-self: flex-start;
+}
+.sender,
+.receiver {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+
+.sender {
+  background: var(--sender-message-green);
+  align-self: flex-end;
+}
+
+.receiver {
+  background: var(--white);
+  align-self: flex-start;
 }
 
 .message-box-received.disabled {
